@@ -30,7 +30,7 @@ img {
 
 .container {
   /* background: rgba(255, 0, 0, 0.5); */
-  height: 100vh;
+  height: 98vh;
   display: grid;
   /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
   grid-template-columns: 1fr 1fr 1fr;
@@ -152,6 +152,8 @@ input {
 }
 
 .footer1 {
+  display: flex;
+  align-content: center;
   grid-column: 1 / span 3;
   grid-row: 6;
   background-color: rgb(242, 242, 242);
@@ -160,6 +162,8 @@ input {
 }
 
 .footer2 {
+  display: flex;
+  align-content: center;
   grid-column: 1 / span 3;
   grid-row: 7;
   background: rgb(242, 242, 242);
