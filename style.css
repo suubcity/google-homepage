@@ -1,0 +1,177 @@
+/* html * {
+  border: 1px dashed purple;
+} */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  padding-top: 5px;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  /* background: rgba(255, 0, 0, 0.5); */
+  height: 100vh;
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: .5fr 2.5fr 1fr .3fr 1fr .5fr .5fr;
+}
+
+/* navigation section */
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  grid-column: 1 / span 3;
+  background: white;
+  padding-right: 20px;
+}
+
+.navbar>* {
+  flex-basis: content;
+  justify-self: center;
+  align-self: center;
+  padding: 10px;
+  font-size: 13px;
+}
+
+#nav-blue-button {
+  background: linear-gradient(rgb(67, 135, 253), rgb(70, 131, 234));
+  color: white;
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+  border: none;
+}
+
+#nav-square-button {
+  height: 15px;
+}
+
+/* logo section */
+.logo {
+  grid-column: 1 / span 3;
+  grid-row: 2;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/*searchbox section*/
+.searchbox {
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.searchbox-container {
+  height: 23px;
+  width: 482px;
+  border: 1px solid rgb(139, 139, 139, 0.5);
+  border-radius: 24px;
+  display: flex;
+  padding: 10px 15px;
+  align-items: center;
+}
+
+.searchbox-container:hover {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.searchbox-container>* {}
+
+.search-icon {
+  height: 18px;
+  width: auto;
+}
+
+input {
+  width: 100%;
+  margin-left: 10px;
+  border: none;
+  background: white;
+}
+
+/* buttons section */
+.buttons {
+  grid-column: 1 / span 3;
+  grid-row: 4;
+  display: flex;
+  justify-content: center;
+}
+
+.greybutton {
+  background-color: rgb(241, 241, 241);
+  border: none;
+  padding: 5px 10px;
+  margin: 10px;
+  opacity: 0.7;
+  border-radius: 5px;
+}
+
+.greybutton:hover {
+  opacity: 1;
+  /* border: 1px solid black; */
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.greybutton:active {
+  border: 1px solid rgb(10, 14, 195);
+}
+
+/* language section */
+.language {
+  grid-column: 1 / span 3;
+  grid-row: 5;
+  text-align: center;
+  vertical-align: top;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.footer1 {
+  grid-column: 1 / span 3;
+  grid-row: 6;
+  background-color: rgb(242, 242, 242);
+  padding: 15px;
+  color: grey;
+}
+
+.footer2 {
+  grid-column: 1 / span 3;
+  grid-row: 7;
+  background: rgb(242, 242, 242);
+}
+
+.footer2 a {
+  color: black;
+  text-decoration: none;
+  padding: 15px;
+  color: grey;
+}
+
+.footer2 a:hover {
+  text-decoration: underline;
+}
